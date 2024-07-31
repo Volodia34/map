@@ -1,5 +1,7 @@
+import {Marker} from "./Marker.ts";
+
 export interface SideMenuProps {
-    markers: Array<{ lat: number, lng: number, id: number }>;
+    markers: Marker[]
     onMarkerClick: (lat: number, lng: number) => void;
     onDeleteMarker: (id: number) => void;
     onClearMarkers: () => void;

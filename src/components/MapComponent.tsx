@@ -63,7 +63,7 @@ const MapComponent: React.FC<MapComponentProps> = ({ userLocation }) => {
                             }}
                         >
                             <Popup>
-                                Marker {marker.id}
+                                {marker.name}
                                 <button
                                     className="side-menu-button"
                                     onClick={(e) => handleMarkerDelete(e, marker.id)}

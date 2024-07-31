@@ -9,7 +9,7 @@ const SideMenu: React.FC<SideMenuProps> = ({ markers, onMarkerClick, onDeleteMar
             <ul className="side-menu-list">
                 {markers.map(marker => (
                     <li key={marker.id} className="side-menu-list-item">
-                        Marker {marker.id}
+                        {marker.name}
                         <button className="side-menu-go-button" onClick={() => onMarkerClick(marker.lat, marker.lng)}>Go to</button>
                         <button className="side-menu-delete-button" onClick={() => onDeleteMarker(marker.id)}>Delete</button>
                     </li>
